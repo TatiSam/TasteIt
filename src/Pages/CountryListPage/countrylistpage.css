@@ -1,0 +1,10 @@
+.country_list {
+    padding: 15px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 300px) {
+    .country_list {
+        padding-left: 0;
+    }
+}

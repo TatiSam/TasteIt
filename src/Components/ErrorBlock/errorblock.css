@@ -1,0 +1,36 @@
+.error_block {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error_block p:first-child {
+    color: #f7a52b;
+    font-size: 28px !important;
+}
+
+.error_block p:last-child {
+    color: #777;
+    font-size: 24px !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .error_block p:first-child {
+        font-size: 24px !important;
+    }
+
+    .error_block p:last-child {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .error_block p:first-child {
+        font-size: 20px !important;
+    }
+
+    .error_block p:last-child {
+        font-size: 16px !important;
+    }
+}

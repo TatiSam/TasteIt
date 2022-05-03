@@ -1,0 +1,28 @@
+.scroll_to_top_btn {
+  font-size: 30px;
+  position: fixed;
+  right: 50%;
+  bottom: 100px;
+  margin-right: -520px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  .scroll_to_top_btn {
+    margin-right: 30px;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .scroll_to_top_btn {
+    margin-right: 2px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scroll_to_top_btn {
+    font-size: 20px;
+  }
+}

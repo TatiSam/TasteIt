@@ -1,0 +1,35 @@
+.preferences_top {
+    display: flex;
+    justify-content: center;
+}
+
+.preferences_top h2 {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.preferences_top_active {
+    color: #f7a52b;
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+.preferences_top>span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.preferences p {
+    text-align: center;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 400px) {
+    .preferences_top>span {
+        font-size: 20px;
+    }
+
+    .preferences_top h2 {
+        font-size: 18px;
+    }
+}

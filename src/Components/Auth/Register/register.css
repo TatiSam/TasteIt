@@ -1,0 +1,19 @@
+.register_block {
+    width: 100%;
+    color: rgb(200, 200, 200);
+    position: relative;
+}
+
+.register_block h2 {
+    text-align: center;
+    color: rgb(230, 230, 230);
+    font-weight: 200;
+}
+
+.register_block_goback {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}

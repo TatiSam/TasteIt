@@ -1,0 +1,41 @@
+.bigbox_container {
+    background-color: white;
+    padding: 3px;
+    width: 80%;
+    margin: 5px auto 15px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigbox_img img {
+    width: 100%;
+}
+
+.bigbox_text {
+    padding: 10px;
+}
+
+.bigbox_text h2 {
+    text-align: center;
+}
+
+.bigbox_text a {
+    font-weight: 600;
+}
+
+.bigbox_text a:hover {
+    text-decoration: underline;
+}
+
+.bigbox_text>article {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    .bigbox_container {
+        width: 90%;
+    }
+}

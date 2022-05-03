@@ -1,0 +1,16 @@
+.login_block {
+    width: 100%;
+    color: rgb(200, 200, 200);
+    position: relative;
+}
+
+.login_block h2 {
+    text-align: center;
+    color: rgb(230, 230, 230);
+    font-weight: 200;
+}
+
+.validation_error {
+    font-size: 12px;
+    margin-top: 20px;
+}

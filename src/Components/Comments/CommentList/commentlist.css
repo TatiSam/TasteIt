@@ -1,0 +1,32 @@
+.comments {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comments_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.comments_msg_block {
+    display: flex;
+    align-items: center;
+}
+
+.comments_msg_block a {
+    color: #f7a52b;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.comments_msg_block a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .comments {
+        width: 100%;
+    }
+}

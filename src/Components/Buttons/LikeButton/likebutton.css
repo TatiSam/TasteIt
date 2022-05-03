@@ -1,0 +1,30 @@
+.like_btn_box {
+  display: flex;
+}
+
+.like_btn {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ccc;
+}
+
+.like_btn:disabled {
+  cursor: context-menu;
+}
+
+@media only screen and (max-width: 600px) {
+  .like_btn {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .like_btn {
+    font-size: 22px;
+  }
+}

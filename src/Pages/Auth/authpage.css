@@ -1,0 +1,50 @@
+.auth {
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 5px solid #f7a52b;
+    border-radius: 5px;
+}
+
+.auth_welcome_msg {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.auth_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.auth_footer span:last-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    .auth {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .auth_footer {
+        flex-direction: column;
+    }
+
+    .auth_footer span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .auth {
+        width: fit-content;
+    }
+}
