@@ -2,7 +2,7 @@ import axios from 'axios';
 import { COUNTRY_RESOURCE_NAME, DISH_RESOURCE_NAME } from '../consts/consts';
 
 const api = axios.create({
-    baseURL: 'http://tasteit-env.eba-zcmqefys.us-east-1.elasticbeanstalk.com/api/1/'
+    baseURL: 'http://tasteit-env-1.eba-ccgwvped.us-east-1.elasticbeanstalk.com/api/1/'
 });
 
 const addResourceToUser = (user, resourceName, resourceId) => {
