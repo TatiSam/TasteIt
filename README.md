@@ -5,13 +5,25 @@ Web site: http://tasteit-tatisam.herokuapp.com
 Server side description: https://github.com/TatiSam/TasteItAPI
 
 ## Features:
-- Discover random country from the TasteIt API on the Home page
-- Discover a list of countries from the TasteIt API on the Countries page
-- Discover a country from the TasteIt API and view country details like name, image, article, rating, comments and dishes
-- Provides the ability to register and login on the Login|Register page
-- Provides the ability to add country or dish to preferences and view a list of countries and dishes on the My Preferences page
-- Provides the ability to add rating to country by user's ip
-- Provides the ability to post/edit/delete comments for the country
+- Discover random country with its dishes from the TasteIt API on the home page.
+- Discover a list of countries from the TasteIt API on the countries page and by clicking on button Read more discover a country details like image, article, rating, comments and dishes.
+- Provides the ability to register and login on the Login|Register page.
+- Provides the ability to add country or dish to preferences and view a list of countries and dishes on the my preferences page.
+- Provides the ability to add rating to country by user's ip.
+- Provides the ability to post/edit/delete comments for the country.
+- Stores the Jwt token received on the server during Login in local storage for 24 hours.
+- Has two user levels: admin and user. User can post/edit/delete comment to country, add/delete country or dish to his preference list. Admin can add/edit/delete country to website, add/edit/delete dish to country.
+
+## Architecture and Tech features Client Side
+<ul>
+  <li>Build with <a href="//https://ru.reactjs.org//">React JS</a></li>
+  <li><a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> for using state and other React features without writing a class component</li>
+  <li><a href="https://reactrouter.com/">React Router Dom v6</a> for routing in application and for building single-page application that have many pages and components but the page is never refreshed</li>
+  <li><a href="https://react-redux.js.org/">React Redux</a> for reading data from a Redux store, and dispatch actions to the store to update state</li>
+  <li><a href="https://react-icons.github.io/react-icons/">React Icons</a></li>
+  <li><a href="https://github.com/axios/axios">Axios</a> for asynchronous HTTP requests to REST API</li>
+  <li><a href="https://heroku.com/">Heroku</a> for storage react app</li>
+</ul>
 
 ## Architecture and Tech features Server Side
 <ul>
@@ -31,17 +43,6 @@ Server side description: https://github.com/TatiSam/TasteItAPI
   <li><a href="https://aws.amazon.com/">Amazon Web Services</a> for storage database and server side API</li>
 </ul>
 
-## Architecture and Tech features Client Side
-<ul>
-  <li>Build with <a href="//https://ru.reactjs.org//">React JS</a></li>
-  <li><a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> for using state and other React features without writing a class component</li>
-  <li><a href="https://reactrouter.com/">React Router Dom v6</a> for routing in application and for building single-page application that have many pages and components but the page is never refreshed</li>
-  <li><a href="https://react-redux.js.org/">React Redux</a> for reading data from a Redux store, and dispatch actions to the store to update state</li>
-  <li><a href="https://react-icons.github.io/react-icons/">React Icons</a></li>
-  <li><a href="https://github.com/axios/axios">Axios</a> for asynchronous HTTP requests to REST API</li>
-  <li><a href="https://heroku.com/">Heroku</a> for storage react app</li>
-</ul>
-
 ## Author
 
 Tatiana Samoilenko
@@ -55,4 +56,5 @@ Israel
   <li>Search bar</li>
   <li>Animation to drop down menu</li>
   <li>Infinite scrolling</li>
+  <li>Admin page</li>
 </ul>
