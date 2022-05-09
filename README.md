@@ -1,4 +1,4 @@
-# Taste It is a Spring Boot and ReactJS Fullstack application
+# Taste It is a Java Spring Boot and ReactJS Fullstack application
 
 Web site: http://tasteit-tatisam.herokuapp.com
 
@@ -11,12 +11,12 @@ Server side description: https://github.com/TatiSam/TasteItAPI
 - Provides the ability to add country or dish to preferences and view a list of countries and dishes on the my preferences page.
 - Provides the ability to add rating to country by user's ip.
 - Provides the ability to post/edit/delete comments for the country.
-- Stores the Jwt token received on the server during Login in local storage for 24 hours.
+- Stores the JWT token received on the server during Login in local storage for 24 hours.
 - Has two user levels: admin and user. User can post/edit/delete comment to country, add/delete country or dish to his preference list. Admin can add/edit/delete country to website, add/edit/delete dish to country.
 
 ## Architecture and Tech features Client Side
 <ul>
-  <li>Build with <a href="//https://ru.reactjs.org//">React JS</a></li>
+  <li>Building with <a href="//https://ru.reactjs.org//">React JS</a></li>
   <li><a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> for using state and other React features without writing a class component</li>
   <li><a href="https://reactrouter.com/">React Router Dom v6</a> for routing in application and for building single-page application that have many pages and components but the page is never refreshed</li>
   <li><a href="https://react-redux.js.org/">React Redux</a> for reading data from a Redux store, and dispatch actions to the store to update state</li>
@@ -27,7 +27,7 @@ Server side description: https://github.com/TatiSam/TasteItAPI
 
 ## Architecture and Tech features Server Side
 <ul>
-  <li>Written in <a href="https://www.java.com/">Java</a> language uses <a href="https://spring.io/projects/spring-boot">Spring Boot</a></li>
+  <li>Written in <a href="https://spring.io/projects/spring-boot">Java Spring Boot</a></li>
   <li><a href="https://spring.io/projects/spring-data-jpa">Spring Data JPA</a> for working with database</li>
   <li><a href="https://spring.io/projects/spring-security">Spring Security</a> for authentication and access-control</li>
   <li><a href="https://en.wikipedia.org/wiki/Bcrypt">BCrypt</a> password encoder for encode password</li>
