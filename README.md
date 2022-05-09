@@ -1,12 +1,12 @@
-# TasteIt is a Spring Boot and ReactJS Fullstack application
+# Taste It is a Spring Boot and ReactJS Fullstack application
 
 Web site: http://tasteit-tatisam.herokuapp.com
 
 Server side description: https://github.com/TatiSam/TasteItAPI
 
 ## Features:
-- Discover random country with its dishes from the TasteIt API on the home page.
-- Discover a list of countries from the TasteIt API on the countries page and by clicking on button Read more discover a country details like image, article, rating, comments and dishes.
+- Discover random country with its dishes from the Taste It API on the home page.
+- Discover a list of countries from the Taste It API on the countries page and by clicking on button Read more discover a country details like image, article, rating, comments and dishes.
 - Provides the ability to register and login on the Login|Register page.
 - Provides the ability to add country or dish to preferences and view a list of countries and dishes on the my preferences page.
 - Provides the ability to add rating to country by user's ip.
