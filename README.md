@@ -6,13 +6,13 @@ Server side description: https://github.com/TatiSam/TasteItAPI
 
 ## Features:
 - Discover random country with its dishes from the Taste It API on the home page.
-- Discover a list of countries from the Taste It API on the countries page and by clicking on button Read more discover a country details like image, article, rating, comments and dishes.
+- Discover the list of countries from the Taste It API on the countries page. Click on button Read more and discover a country details like image, article, rating, comments and dishes.
 - Provides the ability to register and login on the Login|Register page.
 - Provides the ability to add country or dish to preferences and view a list of countries and dishes on the my preferences page.
-- Provides the ability to add rating to country by user's ip.
+- Provides the ability to add rating to country by user's IP.
 - Provides the ability to post/edit/delete comments for the country.
 - Stores the JWT token received on the server during Login in local storage for 24 hours.
-- Has two user levels: admin and user. User can post/edit/delete comment to country, add/delete country or dish to his preference list. Admin can add/edit/delete country to website, add/edit/delete dish to country.
+- There are two user levels: admin and user. User can post/edit/delete comment to country, add/delete country or dish to his preference list. Admin can add/edit/delete country to website, add/edit/delete country dish.
 
 ## Architecture and Tech features Client Side
 <ul>
