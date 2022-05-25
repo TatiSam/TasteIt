@@ -53,8 +53,7 @@ Israel
 
 ## TODO
 <ul>
-  <li>Search bar</li>
-  <li>Animation to drop down menu</li>
+  <li>Search bar - done</li>
   <li>Infinite scrolling</li>
   <li>Admin page</li>
 </ul>
