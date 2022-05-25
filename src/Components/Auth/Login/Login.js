@@ -31,7 +31,7 @@ function Login() {
             .then(response => {
                 setPendingApiCall(false);
                 dispatch(loginAction(response));
-                navigate(-1);
+                navigate('/');
             }).catch(e => {
                 setPendingApiCall(false);
                 if (e.response && e.response.status) {

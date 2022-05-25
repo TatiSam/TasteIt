@@ -5,6 +5,7 @@ import { MdOutlineDehaze, MdLogout } from 'react-icons/md';
 import { logout } from '../../store/slices/authSlice';
 import authService from '../../Services/authService';
 import './header.css';
+import SearchBar from '../SearchBar/SearchBar';
 
 function Header() {
     const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function Header() {
                 <div className='header_logo'>
                     <NavLink to='/'>Taste It<span> .</span></NavLink>
                 </div>
+                <SearchBar />
                 <nav>
                     <MdOutlineDehaze
                         className='outlines'

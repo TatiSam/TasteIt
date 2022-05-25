@@ -1,0 +1,127 @@
+.search {
+    flex-grow: 2;
+    display: flex;
+    justify-content: left;
+    float: right;
+    justify-content: right;
+}
+
+.search_icon {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+}
+
+.search_icon:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.search input {
+    padding: 4px 10px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: 1px solid #ddd;
+    outline: none;
+    font-size: 17px;
+}
+
+.search .search_btn {
+    padding: 3px 6px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: #fff;
+    font-size: 22px;
+    color: #777;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.search .search_btn:hover {
+    background: #ddd;
+}
+
+.search .search_btn:disabled {
+    cursor: context-menu;
+    background-color: #fff;
+}
+
+.search .close_btn {
+    margin-left: 5px;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.search_block {
+    max-width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_block div:first-child {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.search_block_result {
+    width: 100%;
+    padding: 10px 3px 0 3px;
+    text-align: center;
+    color: #fff;
+}
+
+.search_block_result a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 400px) {
+    .search .search_btn {
+        font-size: 18px;
+    }
+
+    .search input {
+        font-size: 14px;
+    }
+
+    .search .close_btn {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .search_block>div:first-child {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .search_block input {
+        max-width: 80%;
+    }
+
+    .search_block .close_btn {
+        margin-bottom: 5px;
+    }
+
+    .search_block_result a {
+        font-size: 16px;
+    }
+}

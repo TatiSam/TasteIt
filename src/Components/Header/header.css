@@ -3,6 +3,11 @@
     padding: 0 10px;
     border-bottom: 1px solid rgba(200, 200, 200, 0.6);
     display: flex;
+    position: relative;
+}
+
+.header_logo{
+    margin-right: 10px;
 }
 
 .header_logo a {
@@ -53,6 +58,7 @@
 
     .outlines {
         display: block;
+        margin-left: 10px;
         cursor: pointer;
     }
 

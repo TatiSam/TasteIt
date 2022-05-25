@@ -41,7 +41,12 @@ function CountryPage() {
                                 resourceName={DISH_RESOURCE_NAME}
                                 key={d.id} />
                         )}
-                        <div className='country_block'>
+                        <a className='source'
+                            href={country.source}
+                            target='_blank'>
+                            Original source
+                        </a>
+                        <div>
                             <StarRating
                                 countryId={country.id}
                                 avgRating={country.averageRating}

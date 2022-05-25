@@ -1,5 +1,9 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import jwt_decode from "jwt-decode";
+import authService from './Services/authService';
+import { logout } from './store/slices/authSlice';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import AboutPage from './Pages/About/AboutPage';
@@ -11,7 +15,20 @@ import PreferencesPage from './Pages/Preferences/PreferencesPage';
 import NotFoundPage from './Pages/NotFound/NotFoundPage';
 
 function App() {
+  const dispatch = useDispatch();
   const { isLoggedIn } = useSelector(state => state.auth);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      const token = localStorage.getItem('user');
+      console.log(Date.now());
+      const decode = jwt_decode(token);
+      if (decode.exp > Date.now()) {
+        authService.logout();
+        dispatch(logout());
+      }
+    }
+  })
 
   return (
     <BrowserRouter>

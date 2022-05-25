@@ -12,6 +12,10 @@ const countryById = (id) => {
     return api.get(`/countries/${id}`);
 }
 
+const countryByName = (name) => {
+    return api.get(`/countries/name/${name}`);
+}
+
 const randomCountry = () => {
     return api.get('/countries/random');
 }
@@ -65,6 +69,7 @@ const deleteComment = (user, commentId) => {
 const contentService = {
     countries,
     countryById,
+    countryByName,
     randomCountry,
     rateCountry,
     postComment,

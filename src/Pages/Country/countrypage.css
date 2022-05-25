@@ -3,9 +3,22 @@
     height: 100%;
 }
 
+.source{
+    display: block;
+    width: 80%;
+    margin: 0px auto 20px auto;
+    color: #777;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .source {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 300px) {
     .country {
-        padding-left: 20px;
-        padding-right: 30px;
+        padding: 10px;
     }
 }

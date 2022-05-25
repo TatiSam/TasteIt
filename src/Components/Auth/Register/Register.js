@@ -44,7 +44,7 @@ function Register(props) {
 
     const onClickRegister = () => {
         if (confirmPassword !== password) {
-            setErrors({ confirmPassword: 'Confirm password and Password do not match' });
+            setErrors({ confirmPassword: 'Confirm Password and Password do not match' });
             return;
         }
         setPendingApiCall(true);
