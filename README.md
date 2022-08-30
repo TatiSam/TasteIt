@@ -1,4 +1,4 @@
-# Taste It is a Java Spring Boot and ReactJS Fullstack application
+# "Taste It" is a Java Spring Boot and ReactJS Fullstack application
 
 Web site: http://tasteit-tatisam.herokuapp.com
 
